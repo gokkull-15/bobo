@@ -4,6 +4,8 @@ import { ethers } from "ethers";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
+import Events from "./pages/Events";
+import Projects from "./pages/Projects";
 
 const App = () => {
   const [walletAddress, setWalletAddress] = useState("");
@@ -45,6 +47,17 @@ const App = () => {
             }
           />
           <Route path="/about" element={<div>About Page</div>} />
+          <Route
+            path="/"
+            element={
+              <Home
+                connectWallet={connectWallet}
+                walletAddress={walletAddress}
+              />
+            }
+          />
+          <Route path="/events" element={<Events />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/events" element={<div>Events Page</div>} />
           <Route path="/projects" element={<div>Projects Page</div>} />
           <Route path="/dashboard" element={<div>Dashboard Page</div>} />
