@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Events from "./pages/Events";
 import Projects from "./pages/Projects";
-
+import About from "./pages/About";
 const App = () => {
   const [walletAddress, setWalletAddress] = useState("");
   const [error, setError] = useState("");
@@ -57,6 +57,7 @@ const App = () => {
             }
           />
           <Route path="/events" element={<Events />} />
+          <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/events" element={<div>Events Page</div>} />
           <Route path="/projects" element={<div>Projects Page</div>} />
