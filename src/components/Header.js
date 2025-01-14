@@ -7,7 +7,7 @@ const Header = ({ connectWallet, walletAddress }) => {
 
   return (
     <nav className="p-6">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center items-center">
         <div
           className="flex items-center space-x-2 cursor-pointer"
           onClick={() => navigate("/")}
