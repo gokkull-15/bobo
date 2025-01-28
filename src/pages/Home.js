@@ -13,6 +13,7 @@ import { useNavigate } from "react-router-dom";
 const Home = ({ connectWallet, walletAddress }) => {
   const navigate = useNavigate();
 
+  
   const getStarted = () => {
     if (!walletAddress) {
       connectWallet();
